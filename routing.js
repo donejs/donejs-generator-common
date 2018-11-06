@@ -39,4 +39,6 @@ exports.addRoutingMap = function(newContent, originalContent) {
 			}
 		}
 	}
+
+	return newContent;
 }
