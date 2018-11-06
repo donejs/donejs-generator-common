@@ -25,7 +25,7 @@ exports.addRoutingMap = function(newContent, originalContent) {
   } : {}
 },`);
 	} else {
-		var includesRouteMapping = data.indexOf("map: ? (buildElectron") > 0;
+		var includesRouteMapping = data.indexOf("map: (buildElectron") > 0;
 		if(!includesRouteMapping) {
 			// A custom configuration version
 	        var configedStealToolsBuildStart = "stealTools.build({\n";
