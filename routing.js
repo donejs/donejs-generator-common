@@ -20,7 +20,7 @@ exports.addRoutingMap = function(newContent, originalContent) {
     var buildStartIndex = data.indexOf(defaultStealToolsBuildStart);
     if(buildStartIndex > 0) {
 		newContent = newContent.replace(defaultStealToolsBuildStart, `stealTools.build({
-  map: ? (buildElectron || buildCordova) ? {
+  map: (buildElectron || buildCordova) ? {
     "can-route-pushstate": "can-route-hash"
   } : {}
 },`);
@@ -32,7 +32,7 @@ exports.addRoutingMap = function(newContent, originalContent) {
 	        buildStartIndex = data.indexOf(configedStealToolsBuildStart);
 	        if(buildStartIndex > 0) {
 					newContent = newContent.replace(configedStealToolsBuildStart, `stealTools.build({
-  map: ? (buildElectron || buildCordova) ? {
+  map: (buildElectron || buildCordova) ? {
     "can-route-pushstate": "can-route-hash"
   }, : {},
 `);
